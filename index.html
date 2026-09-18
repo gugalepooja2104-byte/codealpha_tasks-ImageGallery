@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>✨ My Image Gallery</h1>
+        <p class="subtitle">Explore beautiful moments</p>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/1015/600/400" alt="Mountain">
+                <div class="overlay"><span>Mountain</span></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/1016/600/400" alt="Nature">
+                <div class="overlay"><span>Nature</span></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/1025/600/400" alt="Dog">
+                <div class="overlay"><span>Dog</span></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/1035/600/400" alt="Forest">
+                <div class="overlay"><span>Forest</span></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/1040/600/400" alt="Beach">
+                <div class="overlay"><span>Beach</span></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/1069/600/400" alt="Ocean">
+                <div class="overlay"><span>Ocean</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <button class="close" id="closeBtn">&times;</button>
+
+        <button class="nav-btn prev" id="prevBtn">&#10094;</button>
+
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="Large Preview">
+            <p id="caption"></p>
+        </div>
+
+        <button class="nav-btn next" id="nextBtn">&#10095;</button>
+
+        <div class="counter" id="counter"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
